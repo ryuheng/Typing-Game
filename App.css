@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace, sans-serif;
+  background-color: #ddd;
+}
+
+#root{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.Instructions{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 150px;
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+  /* border: 1px solid #000000; */
+}
+
+.keySwitch{
+  border: 2px solid #777;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #333;
+  padding: 0 5px 3px;
+  background-image: linear-gradient(to bottom right, #eee, #999);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Timer{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actual-text{
+  width: 600px;
+  flex-wrap: wrap;
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: center;
+}
+
+.word{
+  margin-right: 13.21px;
+}
+
+.character{
+  white-space: pre;
+}
+
+
+.caret{
+  position: absolute;
+  margin-left: -6px;
+  width: 1px;
+  height: 1rem;
+  color: red;
+  border: transparent;
+  background: none;
+  animation-name: blinking;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking{
+  0% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.correct{
+  /* color: #999; */
+  color: #50c878;
+}
+
+.wrong{
+  color: #dc143c;
+  text-decoration-line: underline;
+  text-decoration-color: #dc143c;
+  background-color: #ffb6c1;
+}
+
+.preview-text{
+  width: 600px;
+  height: 87.333px;
+  text-align: center;
+}
+
+.preview{
+  word-break: break-all;
+}
+
+input{
+  max-width: 100px;
+  outline: none;
+  border: none;
+  caret-color: transparent;
+  color: transparent;
+}
+
+.Result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 80px 40px;
+  border: 3px solid #000000;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
