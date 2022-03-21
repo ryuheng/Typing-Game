@@ -6,13 +6,13 @@
 `npm install`\
 `npm start`
 
-**I had to refer to a few tutorials online in the initial building phase as a starting point to learn about the necessities of a typing game. However, they were mainly over-simplified and didn't have certain features that I wanted in a more "complete" typing game. Some features that I implemented for the game to be more Monkeytype-like include:**\
-- A simple animation that shifts the test text as the player progresses
+**I had to refer to a few tutorials online in the initial building phase as a starting point to learn about the necessities of a typing game. However, they were mainly over-simplified and didn't have certain features that I wanted in a more "complete" typing game. Some features that I implemented for the game to be more Monkeytype-like include:**
+- A simple animated-look (but not a real animation) that shifts the test text as the player progresses
 - A blinking cursor that moves as the player types each character
 - A refresh key to restart the game whenever
 - Fixed problem with regards to <kbd>Ctrl</kbd> + <kbd>Backspace</kbd>
-- Improved on gameplay interface such as displaying extra wrong character
-- Use a counntdown timer instead of a stopwatch for gameplay and conditionally render the test result box
+- Improved on gameplay interface such as displaying extra wrong characters
+- Use a countdown timer instead of a stopwatch for gameplay and conditionally render the test result box
 
 **Further optimisations:**
 - Able to display different random test text (maybe using an API?)
