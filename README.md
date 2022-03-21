@@ -22,13 +22,13 @@
 
 **Some screenshots**
 <br>
-![Cursor](/pics/Cursor.JPG =x300)
+![Cursor](/pics/Cursor.JPG |height=350)
 overall look
 <br>
-![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG =x300)
+![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG |height=350)
 extras are displayed red
 <br>
-![Result](/pics/Result.JPG =x300)
+![Result](/pics/Result.JPG |height=350)
 result page
 <br>
 
