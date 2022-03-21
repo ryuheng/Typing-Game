@@ -19,3 +19,14 @@
 - Allow users to select the duration of the countdown
 - Improve underlying implementation of the game as the current logic in checking user input is inefficient
 - Segmentation of different React components into their own individual files for better organisation
+
+**Some screenshots**
+<br>
+![Cursor](/pics/Cursor.JPG)
+<br>
+![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG)
+<br>
+![Result](/pics/Result.JPG)
+<br>
+
+**Test text in game isn't owned by me. Credit to song "Never Gonna Give You Up" by Rick Astley**
