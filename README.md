@@ -23,12 +23,15 @@
 **Some screenshots**
 <br>
 ![Cursor](/pics/Cursor.JPG)
+<br>
 overall look
 <br>
 ![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG)
+<br>
 extras are displayed red
 <br>
 ![Result](/pics/Result.JPG)
+<br>
 result page
 <br>
 
