@@ -22,11 +22,14 @@
 
 **Some screenshots**
 <br>
-![Cursor](/pics/Cursor.JPG)
+![Cursor](/pics/Cursor.JPG =x300)
+overall look
 <br>
-![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG)
+![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG =x300)
+extras are displayed red
 <br>
-![Result](/pics/Result.JPG)
+![Result](/pics/Result.JPG =x300)
+result page
 <br>
 
 **Test text in game isn't owned by me. Credit to song "Never Gonna Give You Up" by Rick Astley**
