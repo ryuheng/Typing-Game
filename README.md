@@ -10,9 +10,15 @@
 - A simple animated-look (but not a real animation) that shifts the test text as the player progresses
 - A blinking cursor that moves as the player types each character
 - A refresh key to restart the game whenever
-- Fixed problem with regards to <kbd>Ctrl</kbd> + <kbd>Backspace</kbd>
+- Fixed problem with regards to <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> (more below)
 - Improved on gameplay interface such as displaying extra wrong characters
 - Use a countdown timer instead of a stopwatch for gameplay and conditionally render the test result box
+
+**Input validating logic (processInput() function in Game.js file):**
+- Initial implementation was to use a counter variable (say *x*)to check the the character at index *x* of the user input against the corresponding character of the test text (also at index *x*). As long as there is a new character input by the user, *x* is incremented by 1. If the input at index *x* is *null*, the game evaluates the input as a single <kbd>Backspace</kbd> and *x* is decremented by 1.
+- The problem with the above implementation is that the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>Backspace</kbd> cannot be differentiated fron a single <kbd>Backspace</kbd> and hence, decrementing *x* by 1 would be wrong if the entire word is cleared.
+- The subsequent implementation was to check each character typed by the user from the start of the test text as long as there is a change in user input (both adding and deleting characters) in order to avoid the above problem. However, this is not efficient as size of input (characters to check) grows as the game progresses.
+- The current implementation breaks the test text into individual words using React JS and processInput() is only called to check the characters within a single word on every change in user input, making it more efficient.
 
 **Further optimisations:**
 - Able to display different random test text (maybe using an API?)
@@ -26,13 +32,16 @@
 <br>
 overall look
 <br>
+<br>
 ![ExtraWrongCharacters](/pics/ExtraWrongCharacters.JPG)
 <br>
 extras are displayed red
 <br>
+<br>
 ![Result](/pics/Result.JPG)
 <br>
 result page
+<br>
 <br>
 
 **Test text in game isn't owned by me. Credit to song "Never Gonna Give You Up" by Rick Astley**
